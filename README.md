@@ -1,6 +1,6 @@
 # Mentcare Patient Management System
 
-<details><summary><strong>Visit Collaborators Projects!</strong></summary> 
+<details><summary><strong>Visit Collaborators Profiles!</strong></summary> 
 <br>
 
 1. [Logan Lauton](https://github.com/logan-lauton)
