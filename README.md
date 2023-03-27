@@ -3,8 +3,10 @@
 <details><summary><strong>Visit Collaborators Profiles!</strong></summary> 
 <br>
 
-1. [Logan Lauton](https://github.com/logan-lauton)
-2. [Emma Dorn](https://github.com/emmaedorn)
+1. [Emma Dorn](https://github.com/emmaedorn)
+2. [Logan Lauton](https://github.com/logan-lauton)
+3. [Patricia Rivera Morales](https://github.com/rivera020)
+4. [Sydney Steckart](https://github.com/sydsteck)
 
 </details>
 
