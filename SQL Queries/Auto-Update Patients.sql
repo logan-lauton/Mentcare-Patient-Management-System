@@ -1,4 +1,4 @@
---The following code can be used to automatically update patients table with newest appointments.
+--The following query can be used to automatically update patients table with newest appointments.
 --This will be thrown into a for loop on python, if this code raises an excepetion,
 --or in other words if this patient is in the system it will result move to an update query instead.
 INSERT INTO Patients 
@@ -11,8 +11,12 @@ SELECT
     TO_CHAR(MAX(TO_DATE(APPOINTMENTDATE, 'MM/DD/YYYY')), 'MM/DD/YYYY') 
 FROM 
     Appointments 
+WHERE NOT EXISTS (
+    SELECT 1 FROM Patients WHERE Patients.USERNAME = Appointments.PATIENTUNAME
+)
 GROUP BY 
     PATIENTUNAME, PATIENTFNAME, PATIENTLNAME, PATIENTEMAIL, PATIENTMEDS;
+
 
 --The following query is the update code(python) that will occur in case of a user already 
 --existing in the table. With both of these queries complete, we can now automatically update 
